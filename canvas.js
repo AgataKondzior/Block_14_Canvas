@@ -6,8 +6,9 @@ image.onload = function() {
   ctx.drawImage (image, 0,0, c.width, c.height);
   var savedImage ="c.ToDataURL();
   window.open(savedImage);
+  fillRect(100,100,100,100);
+  strokeRect(50,50,50,50);
 }
 img.src = "#"
 
-fillRect(100,100,100,100);
-strokeRect(50,50,50,50);
+
