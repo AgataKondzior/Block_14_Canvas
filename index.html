@@ -2,14 +2,32 @@
 <html>
   <head>
     <meta charset="utf-8">
-        <title>Mem Picture</title>
-        <meta name="keywords" content="canvas" "mem" "picture">
-        <meta name="description" content="How to make a mem in Canvas">
-        <link href="style.css" type="text/css" rel="stylesheet"/>
-    
+    <title>Meme maker</title>
+    <meta name="viewport" content="width=device-width", initial-scale>
+    <meta name="description" content="How to make a mem in Canvas">
+    <meta name="apple-mobile-web-app-capable" content = "yes">
+    <link href="assets/css/libnotify.css" rel="stylesheet">
+    <script src="assets/js/humane.min.js"></script> 
+    <style>
+    #image-container {
+      display: flex;      
+    } 
+    </style>   
   </head>
+  
+  
   <body>
-    <canvas id="c" width = "200" height = "200">Please update your browser</canvas>
-    <img src = "#">
+    <div>
+      <input type = "file" id="file"/>
+    </div>
+      <div id = "image-container">
+      <canvas width = "500" height = "500"></canvas>
+      <div>
+        <span>Top line</span><br/>
+        <input id="bottomLineText" type = "text"><br/>
+        <button id="saveBtn">Save</button>
+      </div>
+   </div>
+   
   </body>
 </html>
