@@ -23,10 +23,13 @@ function redrawMeme (image, topLine, bottomLine) {
   var savedImage ="canvas.ToDataURL();
   window.open(savedImage);
 }
-  img.src = "Meme.jpg"
-
+  img.src = "Meme.jpg";
   
-  
+  ctx.strokeStyle = "black";
+  ctx.strokeText (HELLO THERE, 50, 10);
+  ctx.font = " 36px Arial";
+  ctx.fillText = "white";
+  ctx.fill();
   }
   
 function saveFile () {
