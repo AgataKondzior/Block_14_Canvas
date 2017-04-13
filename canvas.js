@@ -1,6 +1,6 @@
 function textChangeListener(event){
-  var id = evt.target.id;
-  var text = evt.target.value;
+  var id = event.target.id;
+  var text = event.target.value;
   
 if (id = "topLineText") {
     window.topLineText=text;
@@ -13,7 +13,7 @@ if (id = "topLineText") {
 function redrawMeme (image, topLine, bottomLine) {
     var canvas = (document).querySelector("canvas");
     var ctx = canvas.getContext("2d");   
-  if(image ! = null);
+  if(image !=null);
     ctx.drawImage (image, 0,0, canvas.width, canvas.height);
   
   ctx.font = " 36px Arial";
