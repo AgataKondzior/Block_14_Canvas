@@ -3,6 +3,13 @@ body {
     
 }
 
+h1 {
+ font-family: Verdana;
+ font-size: 40px;
+ color: darkblue;
+ margin-left: 120px;
+}
+
 #file {
     margin-top: 20px;
     margin-bottom: 20px;
