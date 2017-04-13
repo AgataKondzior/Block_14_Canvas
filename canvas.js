@@ -11,7 +11,7 @@ if (id = "topLineText") {
   }
   
 function redrawMeme (image, topLine, bottomLine) {
-    var canvas = (document).getElementByTagName("canvas");
+    var canvas = (document).getElementById("image-container");
     var ctx = canvas.getContext("2d");   
   if(image ! = null);
     ctx.drawImage (image, 0,0, canvas.width, canvas.height);
