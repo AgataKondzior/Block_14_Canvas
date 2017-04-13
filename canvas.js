@@ -16,7 +16,7 @@ function redrawMeme (image, topLine, bottomLine) {
   if(image !=null);
     ctx.drawImage (image, 0,0, canvas.width, canvas.height);
   
-  ctx.font = " 36px Arial";
+  ctx.font = "36px Arial";
   ctx.textAlign = "center";
   ctx.strokeStyle = "black";
   ctx.lineWidth = 3;
