@@ -1,18 +1,41 @@
+body {
+    background-color: cornsilk;
+    
+}
 
 #file {
-   
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Verdana;
 }
 
 #image-container {
  display: flex; 
- font-family: Arial;
+ font-family: Verdana;
 }
 
 #topLineText {
+ margin-bottom: 15px; 
+ margin-left:10px;
 }
 
 #bottomLineText {
+  margin-left:10px;  
 }
 
 #saveBtn {
+    margin-left:10px;
+}
+
+canvas {
+    background-color: white;
+    
+   
+    
+}
+
+span {
+    margin-left:10px;
+    font-family: Verdana;
+
 }
