@@ -37,7 +37,7 @@ function textChangeListener(event){
    ctx.fillText(bottomLine, canvas.width/ 2, canvas.height -20);
    ctx.strokeText(bottomLine, canvas.width/ 2,canvas.height -20);
  }
-}                                 
+                                
                  
 function saveFile () {
     window.open(document.querySelector("canvas").toDataURL());  
