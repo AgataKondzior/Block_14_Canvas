@@ -7,7 +7,7 @@ if (id = "topLineText") {
     
   } else {
     window.bottomLineText=text;   
-    redrawMeme(window.imgSrc, window.topLineText, window.bottomLinetext);    
+    redrawMeme(window.imgSrc, window.topLineText, window.bottomLineText);    
   }
   
 function redrawMeme (image, topLine, bottomLine) {
