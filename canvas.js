@@ -34,29 +34,29 @@ function redrawMeme (image, topLine, bottomLine) {
 }                                 
                  
 function saveFile () {
-    window.open(document).getElementByTagName("canvas").toDataURL());  
+    window.open(document).querySelector("canvas").toDataURL());  
   }
   
 function handleFileSelector (evt) {
     var canvasWidth = 500;
     var canvasHeight = 500;
-    var file = evt.target.file;
+    var file = evt.target.files[0];
   
-  var reader = new FileReader();
+    var reader = new FileReader();
       reader.onload = function(fileObject) {
-        var data = fileObject.target.result;
+    var data = fileObject.target.result;
         
-        // Create an image object
-        var image = new Image();
-        image.onload = function() {
+    // Create an image object
+    var image = new Image();
+    image.onload = function() {
           
-          window.imageSrc = this;
-          redrawMeme(window.imageSrc, null, null);
+    window.imageSrc = this;
+    redrawMeme(window.imageSrc, null, null);
         }
         
-        // Set image data to background image.
-        image.src = data;
-        console.log(fileObject.target.result);
+    // Set image data to background image.
+     image.src = data;
+     console.log(fileObject.target.result);
       };
       reader.readAsDataURL(file)
     }
