@@ -43,7 +43,8 @@ function handleFileSelector (evt) {
     var file = evt.target.files[0];
   
     var reader = new FileReader();
-      reader.onload = function(fileObject) {
+    
+  reader.onload = function(fileObject) {
     var data = fileObject.target.result;
         
     // Create an image object
@@ -61,6 +62,7 @@ function handleFileSelector (evt) {
       reader.readAsDataURL(file)
     }
     
+    function(main) {
     window.topLineText = "";
     window.bottomLineText = "";
     var input1 = document.getElementById('topLineText');
@@ -70,7 +72,8 @@ function handleFileSelector (evt) {
     document.getElementById('file').addEventListener('change', handleFileSelect, false);
     document.querySelector('button').addEventListener('click', saveFile, false);
   
+    }
   
-  
+  main();
 
 
