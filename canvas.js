@@ -2,19 +2,21 @@ function textChangeListener(event){
   var id = event.target.id;
   var text = event.target.value;
   
-if (id = "topLineText") {
+if (id == "topLineText") {
     window.topLineText=text;
     
   } else {
-    window.bottomLineText=text;   
+    window.bottomLineText=text; 
+  }
+  
     redrawMeme(window.imgSrc, window.topLineText, window.bottomLineText);    
   }
   
-function redrawMeme (image, topLine, bottomLine) {
+  function redrawMeme (image, topLine, bottomLine) {
     var canvas = (document).querySelector("canvas");
     var ctx = canvas.getContext("2d");   
   if(image !=null);
-    ctx.drawImage (image, 0,0, canvas.width, canvas.height);
+    ctx.drawImage(image, 0,0, canvas.width, canvas.height);
   
   ctx.font = "36px Arial";
   ctx.textAlign = "center";
