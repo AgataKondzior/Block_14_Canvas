@@ -19,8 +19,8 @@ function redrawMeme (image, topLine, bottomLine) {
   var imange = new Image();
   image.onload = function() {
   console.log ("Loaded image");
-  ctx.drawImage (image, 0,0, c.width, c.height);
-  var savedImage ="c.ToDataURL();
+  ctx.drawImage (image, 0,0, canvas.width, canvas.height);
+  var savedImage ="canvas.ToDataURL();
   window.open(savedImage);
 }
   img.src = "Meme.jpg"
