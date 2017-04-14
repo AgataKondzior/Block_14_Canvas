@@ -10,7 +10,7 @@ function textChangeListener(event) {
     }
   
   
-    redrawMeme(window.imgSrc, window.topLineText, window.bottomLineText);    
+    redrawMeme(window.imageSrc, window.topLineText, window.bottomLineText);    
 }
   
 function redrawMeme(image, topLine, bottomLine) {
